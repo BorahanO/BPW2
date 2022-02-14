@@ -54,8 +54,8 @@ public class FirstPersonController : MonoBehaviour
     #endregion
 
     #region Movement Variables
-
-    public bool playerCanMove = true;
+    
+    public static bool playerCanMove = true;
     public float walkSpeed = 5f;
     public float maxVelocityChange = 10f;
 
@@ -614,9 +614,9 @@ public class FirstPersonController : MonoBehaviour
         GUILayout.Label("Movement Setup", new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleCenter, fontStyle = FontStyle.Bold, fontSize = 13 }, GUILayout.ExpandWidth(true));
         EditorGUILayout.Space();
 
-        fpc.playerCanMove = EditorGUILayout.ToggleLeft(new GUIContent("Enable Player Movement", "Determines if the player is allowed to move."), fpc.playerCanMove);
+        FirstPersonController.playerCanMove = EditorGUILayout.ToggleLeft(new GUIContent("Enable Player Movement", "Determines if the player is allowed to move."), FirstPersonController.playerCanMove);
 
-        GUI.enabled = fpc.playerCanMove;
+        GUI.enabled = FirstPersonController.playerCanMove;
         fpc.walkSpeed = EditorGUILayout.Slider(new GUIContent("Walk Speed", "Determines how fast the player will move while walking."), fpc.walkSpeed, .1f, fpc.sprintSpeed);
         GUI.enabled = true;
 
