@@ -1,5 +1,5 @@
+using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class ResolutionManager : MonoBehaviour
@@ -9,8 +9,7 @@ public class ResolutionManager : MonoBehaviour
     Resolution[] resolutions;
     void Start()
     {
-        resolutions = Screen.resolutions;
-        
+        resolutions = Screen.resolutions.Distinct().ToArray();
         resolutionDropdown.ClearOptions();
 
         List<string> options = new List<string>();
@@ -18,10 +17,10 @@ public class ResolutionManager : MonoBehaviour
         int currentResolutionIndex = 0;
         for (int i = 0; i < resolutions.Length; i++)
         {
-            string option = resolutions[i].width + " x " + resolutions[i].height;
+            string option = resolutions[i].width + " x " + resolutions[i].height + " " + resolutions[i].refreshRate.ToString() + " Hz";
             options.Add(option);
 
-            if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
+            if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height && resolutions[i].refreshRate == Screen.currentResolution.refreshRate)
             {
                 currentResolutionIndex = i;
             }
