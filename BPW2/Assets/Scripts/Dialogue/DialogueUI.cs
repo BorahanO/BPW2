@@ -32,6 +32,7 @@ public class DialogueUI : MonoBehaviour
     public void AddResponseevents(ResponseEvent[] responseEvents)
     {
         responseHandler.AddResponseevents(responseEvents);
+        Cursor.visible = true;
     }
     private IEnumerator StepThroughDialogue(DialogueObject dialogueObject)
     {
@@ -57,6 +58,7 @@ public class DialogueUI : MonoBehaviour
         else
         {
             CloseDialogueBox();
+            Cursor.visible = false;
         }
     }
 
