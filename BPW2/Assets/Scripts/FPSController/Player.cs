@@ -15,13 +15,15 @@ public class Player : MonoBehaviour
         if (dialogueUI.IsOpen)
         {
             FirstPersonController.playerCanMove = false;
+            FirstPersonController.cameraCanMove = false;
         }
         else
         {
             FirstPersonController.playerCanMove = true;
+            FirstPersonController.cameraCanMove = true;
         }
         
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && dialogueUI.IsOpen == false)
         {
             Interactable?.Interact(this);
         }
