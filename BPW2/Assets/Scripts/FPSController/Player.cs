@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (dialogueUI.IsOpen)
+        if (dialogueUI.IsOpen || PauseMenu.isPaused)
         {
             FirstPersonController.playerCanMove = false;
             FirstPersonController.cameraCanMove = false;
@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
             FirstPersonController.playerCanMove = true;
             FirstPersonController.cameraCanMove = true;
         }
-        
+
         if (Input.GetKeyDown(KeyCode.E) && dialogueUI.IsOpen == false)
         {
             Interactable?.Interact(this);
