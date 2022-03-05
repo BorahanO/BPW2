@@ -14,6 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - Ok fuck you ik ben er klaar mee
-  responses:
-  - responseText: Ok
-    dialogueObject: {fileID: 0}
+  responses: []

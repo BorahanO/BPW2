@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
+//Item inspect tutorial from SpeedTutor on YT https://www.youtube.com/watch?v=Qfcu1QPGkMA
 public class ObjectController : MonoBehaviour
 {
     [SerializeField] private string objectName;

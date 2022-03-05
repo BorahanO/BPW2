@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+//Item inspect tutorial from SpeedTutor on YT https://www.youtube.com/watch?v=Qfcu1QPGkMA
 public class InspectController : MonoBehaviour
 {
     [SerializeField] private GameObject objectNameBG;
@@ -8,7 +9,7 @@ public class InspectController : MonoBehaviour
 
     [SerializeField] private float onScreenTimer;
     [SerializeField] private Text extraInfoUI;
-    [SerializeField] private GameObject extraInfoBg;
+    [SerializeField] public GameObject extraInfoBg;
     [HideInInspector] public bool startTimer;
     private float timer;
 
