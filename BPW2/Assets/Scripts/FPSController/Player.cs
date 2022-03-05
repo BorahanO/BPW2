@@ -16,11 +16,13 @@ public class Player : MonoBehaviour
         {
             FirstPersonController.playerCanMove = false;
             FirstPersonController.cameraCanMove = false;
+            FirstPersonController.enableHeadBob = false;
         }
         else
         {
             FirstPersonController.playerCanMove = true;
             FirstPersonController.cameraCanMove = true;
+            FirstPersonController.enableHeadBob = true;
         }
 
         if (Input.GetKeyDown(KeyCode.E) && dialogueUI.IsOpen == false)

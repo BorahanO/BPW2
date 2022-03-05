@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 533486786}
   m_Layer: 0
   m_Name: TestNPC
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -494,23 +494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueObject: {fileID: 11400000, guid: 98bb74095cf03094c8351421fef4fd61, type: 2}
-  events:
-  - name: Ok
-    onPickedResponse:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 533486779}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  events: []
 --- !u!114 &553560186 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5994988707224628510, guid: 177a2c9720e707a478e16e223a6a618f,
@@ -541,7 +525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6303fc3ea72175444bdc9388b7c696e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: spin
+  objectName: Spider (E)
   extraInfo: spin ding
   inspectController: {fileID: 33755560}
 --- !u!65 &632557368
@@ -575,7 +559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6303fc3ea72175444bdc9388b7c696e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Gun
+  objectName: Gun (E)
   extraInfo: Coole gun enzo
   inspectController: {fileID: 33755560}
 --- !u!65 &773286537

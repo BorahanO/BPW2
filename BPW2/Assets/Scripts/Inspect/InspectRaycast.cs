@@ -1,7 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
+//Item inspect tutorial from SpeedTutor on YT https://www.youtube.com/watch?v=Qfcu1QPGkMA
 
 public class InspectRaycast : MonoBehaviour
 {
@@ -32,7 +32,7 @@ public class InspectRaycast : MonoBehaviour
                 isCrosshairActive = true;
                 doOnce = true;
 
-                if (Input.GetMouseButtonDown(0))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     raycastedObj.ShowExtraInfo();
                 }
