@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class InspectRaycast : MonoBehaviour
 {
-    [SerializeField] private int rayLength = 5;
+    [SerializeField] private int rayLength = 1;
     [SerializeField] private LayerMask layerMaskInteract;
     private ObjectController raycastedObj;
 
