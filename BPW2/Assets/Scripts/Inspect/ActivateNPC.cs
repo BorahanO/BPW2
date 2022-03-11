@@ -10,7 +10,7 @@ public class ActivateNPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (objectsInspected >= 2)
+        if (objectsInspected >= 3)
         {
             interviewNPC.SetActive(true);
         }
