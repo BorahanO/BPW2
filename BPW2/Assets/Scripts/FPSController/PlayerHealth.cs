@@ -1,22 +1,32 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    private Image HealthBar;
-    public float playerHealth = 50f;
+    [SerializeField]
+    private Image HealthBarFill;
+    [SerializeField] 
+    private GameObject HealthBar;
+
+    private float playerHealth;
     private float playerMaxHealth = 50f;
-    
 
     private void Start()
     {
-        HealthBar = GetComponent<Image>();
+        playerHealth = playerMaxHealth;
     }
 
     public void DamagePlayer()
     {
+        HealthBar.SetActive(true);
         playerHealth -= 10;
+        HealthBarFill.fillAmount = playerHealth / playerMaxHealth;
+        Invoke("SetUIActive", 3.0f);
+    }
+
+    void SetUIActive()
+    {
+        HealthBar.gameObject.SetActive(false);
     }
 
     void KillPlayer()
@@ -25,10 +35,5 @@ public class PlayerHealth : MonoBehaviour
         {
             //Kill Player
         }
-    }
-
-    private void Update()
-    {
-        HealthBar.fillAmount = playerHealth / playerMaxHealth;
     }
 }
