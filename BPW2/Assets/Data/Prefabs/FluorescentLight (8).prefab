@@ -305,6 +305,7 @@ GameObject:
   - component: {fileID: 6747131047988814741}
   - component: {fileID: 6747131047988814743}
   - component: {fileID: 6747131047988814742}
+  - component: {fileID: 8565847785171497354}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -511,6 +512,38 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
+--- !u!114 &8565847785171497354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6747131047988814740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UID: -1415692418
+  color: {r: 1, g: 1, b: 1, a: 1}
+  intensity: 1
+  shadowSpread: 0.05
+  cutoff: 24.61637
+  realisticFalloff: 0
+  samples: 8
+  projMode: 4
+  cookie: {fileID: 0}
+  angle: 57.68962
+  innerAngle: 0
+  cubemap: {fileID: 0}
+  iesFile: {fileID: 0}
+  bitmask: 1
+  bakeToIndirect: 0
+  shadowmask: 1
+  indirectIntensity: 1
+  falloffMinRadius: 1
+  shadowmaskGroupID: 0
+  directionMode: 0
 --- !u!1 &6747131048199811425
 GameObject:
   m_ObjectHideFlags: 0
