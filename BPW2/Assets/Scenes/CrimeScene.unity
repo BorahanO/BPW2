@@ -1088,7 +1088,7 @@ MonoBehaviour:
   shadowSpread: 0.01
   samples: 16
   bitmask: 1
-  bakeToIndirect: 0
+  bakeToIndirect: 1
   shadowmask: 0
   shadowmaskDenoise: 0
   indirectIntensity: 1
@@ -7174,6 +7174,60 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069656198}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!89 &1087968543
+Cubemap:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 6c0479ae6e1becac1416eebe32ee0e7c
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 2
+  m_Width: 1
+  m_Height: 1
+  m_CompleteImageSize: 4
+  m_MipsStripped: 0
+  m_TextureFormat: 5
+  m_MipCount: 1
+  m_IsReadable: 1
+  m_IsPreProcessed: 0
+  m_IgnoreMasterTextureLimit: 0
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_VTOnly: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 6
+  m_TextureDimension: 4
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_LightmapFormat: 0
+  m_ColorSpace: 0
+  m_PlatformBlob: 
+  image data: 24
+  _typelessdata: ff000000ff000000ff000000ff000000ff000000ff000000
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
+  m_SourceTextures:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!43 &1107204066
 Mesh:
   m_ObjectHideFlags: 0
@@ -8947,8 +9001,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   texName: sky.dds
-  color: {r: 0.52674437, g: 0.72055334, b: 0.8396226, a: 1}
-  intensity: 1
+  color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+  intensity: 4.59
   samples: 32
   hemispherical: 0
   bitmask: 1
@@ -8956,7 +9010,7 @@ MonoBehaviour:
   indirectIntensity: 1
   tangentSH: 0
   correctRotation: 0
-  cubemap: {fileID: 8900000, guid: 7ec0d505654da4a45add45159bfe0097, type: 3}
+  cubemap: {fileID: 1087968543}
   UID: 1381522128
 --- !u!4 &1484871600
 Transform:
