@@ -1,16 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] 
-    private int playerHealth;
+    private Image HealthBar;
+    public float playerHealth = 50f;
+    private float playerMaxHealth = 50f;
+    
+
+    private void Start()
+    {
+        HealthBar = GetComponent<Image>();
+    }
 
     public void DamagePlayer()
     {
         playerHealth -= 10;
-        Debug.Log(playerHealth);
     }
 
     void KillPlayer()
@@ -19,5 +25,10 @@ public class PlayerHealth : MonoBehaviour
         {
             //Kill Player
         }
+    }
+
+    private void Update()
+    {
+        HealthBar.fillAmount = playerHealth / playerMaxHealth;
     }
 }
