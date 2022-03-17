@@ -2,32 +2,29 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField]
-    private DialogueUI dialogueUI;
-
-    public DialogueUI DialogueUI => dialogueUI;
-    
-    public IInteractable Interactable { get; set; }
+    [SerializeField] 
+    private GameObject DialogueBox;
+    [SerializeField] 
+    private GameObject InteractionPrompt;
 
     // Update is called once per frame
     void Update()
     {
-        if (dialogueUI.IsOpen || PauseMenu.isPaused)
+        if (DialogueBox.activeSelf || PauseMenu.isPaused)
         {
             FirstPersonController.playerCanMove = false;
             FirstPersonController.cameraCanMove = false;
             FirstPersonController.enableHeadBob = false;
+            InteractionPrompt.SetActive(false);
+            Cursor.visible = true;
         }
         else
         {
             FirstPersonController.playerCanMove = true;
             FirstPersonController.cameraCanMove = true;
             FirstPersonController.enableHeadBob = true;
-        }
-
-        if (Input.GetKeyDown(KeyCode.E) && dialogueUI.IsOpen == false)
-        {
-            Interactable?.Interact(this);
+            InteractionPrompt.SetActive(true);
+            Cursor.visible = false;
         }
     }
 }

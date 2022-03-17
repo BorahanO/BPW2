@@ -21,10 +21,10 @@ public class PlayerHealth : MonoBehaviour
         HealthBar.SetActive(true);
         playerHealth -= 10;
         HealthBarFill.fillAmount = playerHealth / playerMaxHealth;
-        Invoke("SetUIActive", 3.0f);
+        Invoke("SetUIOff", 3.0f);
     }
 
-    void SetUIActive()
+    void SetUIOff()
     {
         HealthBar.gameObject.SetActive(false);
     }

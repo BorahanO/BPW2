@@ -1,0 +1,35 @@
+﻿title: Start
+---
+Ik: Ok, mn eerste dag als detective. Je kunt di- ik bedoel, ik kan dit.
+Ik: Uhh... Naar de crime scene I guess? 
+//Geen jump. Dit is een korte intro
+===
+title: AntoonStart
+---
+Antoon: Damn, je zal maar zo eindigen.
+Antoon: Zo dood... en... i'unno.
+Antoon: Maargoed, check grondig al het bewijs wat er light. Dan haal ik de getuige erbij.
+-> Is goed
+-> Moet dat?
+Antoon: Bekijk ze wel van dichtbij. Je wilt niets missen!
+Antoon: Weet ik veel, ik ben geen agent.
+===
+title: AntoonGoed
+---
+Antoon: Bekijk ze wel van dichtbij. Je wilt niks missen.
+===
+title: AntoonMoetDat
+---
+Antoon: Antoon: Weet ik veel ik ben geen agent.
+<<jump AntoonMoetDat>>
+<<jump AntoonGoed>>
+===
+title: Witness1Start
+---
+FloydLehman: WATS ER???????
+FloydLehman: IK ZWEER IK HEB NIET GEDAAN!!!
+FloydLehman: ...sorry. Dit is eng man weetjetoch?
+
+-> Wat is er gebeurd?
+-> Haha watje
+===

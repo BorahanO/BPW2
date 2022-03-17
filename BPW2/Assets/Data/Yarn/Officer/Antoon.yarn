@@ -1,0 +1,19 @@
+﻿title: AntoonStart
+---
+Antoon: Damn, je zal maar zo eindigen.
+Antoon: Zo dood... en... i'unno.
+Antoon: Maargoed, check grondig al het bewijs wat er light. Dan haal ik de getuige erbij.
+
+-> Is goed
+-> Moet dat?
+===
+title: AntoonGoed
+---
+Antoon: Bekijk ze wel van dichtbij. Je wilt niks missen.
+===
+title: AntoonMoetDat
+---
+Antoon: Antoon: Weet ik veel ik ben geen agent.
+<<jump AntoonMoetDat>>
+<<jump AntoonGoed>>
+===
