@@ -60,8 +60,8 @@ public class YarnInteractable : MonoBehaviour {
             Debug.Log($"Started conversation with {name}.");
         }
     }
-
-//    [YarnCommand("disable")]
+    
+    [YarnCommand("disable")]
     public void DisableConversation() {
         interactable = false;
     }
