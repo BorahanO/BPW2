@@ -55,7 +55,7 @@ public class FirstPersonController : MonoBehaviour
     #region Movement Variables
     
     public static bool playerCanMove = true;
-    public float walkSpeed = 5f;
+    public static float walkSpeed = 5f;
     public float maxVelocityChange = 10f;
 
     // Internal Variables
@@ -66,7 +66,7 @@ public class FirstPersonController : MonoBehaviour
     public bool enableSprint = true;
     public bool unlimitedSprint = false;
     public KeyCode sprintKey = KeyCode.LeftShift;
-    public float sprintSpeed = 7f;
+    public static float sprintSpeed = 7f;
     public float sprintDuration = 5f;
     public float sprintCooldown = .5f;
     public float sprintFOV = 80f;
@@ -609,7 +609,7 @@ public class FirstPersonController : MonoBehaviour
         FirstPersonController.playerCanMove = EditorGUILayout.ToggleLeft(new GUIContent("Enable Player Movement", "Determines if the player is allowed to move."), FirstPersonController.playerCanMove);
 
         GUI.enabled = FirstPersonController.playerCanMove;
-        fpc.walkSpeed = EditorGUILayout.Slider(new GUIContent("Walk Speed", "Determines how fast the player will move while walking."), fpc.walkSpeed, .1f, fpc.sprintSpeed);
+        FirstPersonController.walkSpeed = EditorGUILayout.Slider(new GUIContent("Walk Speed", "Determines how fast the player will move while walking."), FirstPersonController.walkSpeed, .1f, FirstPersonController.sprintSpeed);
         GUI.enabled = true;
 
         EditorGUILayout.Space();
@@ -623,7 +623,7 @@ public class FirstPersonController : MonoBehaviour
         GUI.enabled = fpc.enableSprint;
         fpc.unlimitedSprint = EditorGUILayout.ToggleLeft(new GUIContent("Unlimited Sprint", "Determines if 'Sprint Duration' is enabled. Turning this on will allow for unlimited sprint."), fpc.unlimitedSprint);
         fpc.sprintKey = (KeyCode)EditorGUILayout.EnumPopup(new GUIContent("Sprint Key", "Determines what key is used to sprint."), fpc.sprintKey);
-        fpc.sprintSpeed = EditorGUILayout.Slider(new GUIContent("Sprint Speed", "Determines how fast the player will move while sprinting."), fpc.sprintSpeed, fpc.walkSpeed, 20f);
+        FirstPersonController.sprintSpeed = EditorGUILayout.Slider(new GUIContent("Sprint Speed", "Determines how fast the player will move while sprinting."), FirstPersonController.sprintSpeed, FirstPersonController.walkSpeed, 20f);
 
         //GUI.enabled = !fpc.unlimitedSprint;
         fpc.sprintDuration = EditorGUILayout.Slider(new GUIContent("Sprint Duration", "Determines how long the player can sprint while unlimited sprint is disabled."), fpc.sprintDuration, 1f, 20f);
