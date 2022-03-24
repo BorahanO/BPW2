@@ -1,0 +1,51 @@
+﻿title: AntoonStart
+---
+Antoon: Damn, je zal maar zo eindigen. #line:0a20952 
+Antoon: Zo dood... en... i'unno. #line:081de81 
+Antoon: Maargoed, check grondig al het bewijs wat er light. Dan haal ik de getuige erbij. #line:06c5d5c 
+-> Is goed #line:09e4583 
+    <<jump AntoonGoed>>
+-> Moet dat? #line:0edbc3c 
+    <<jump AntoonMoetDat>>
+===
+title: AntoonGoed
+---
+Antoon: Bekijk alles van dichtbij. Ik ga nog even muziek luisteren. #line:0fb1d7e 
+<<disable Antoon>>
+===
+title: AntoonMoetDat
+---
+Antoon: Weet ik veel ik ben geen agent. #line:0ece961 
+<<disable Antoon>>
+===
+
+title: FloydBegin
+---
+Floyd: IK WAS HET NIET IK ZWEER T JE!!!!
+Floyd: IK LIEP GEWOON TOCH WALLAH!
+Floyd: ... sorry, ik ben echt heel bang.
+-> Wat is er gebeurd?
+    <<jump Verklaring>>
+-> Haha watje
+    <<jump Watje>>
+===
+title: Verklaring
+---
+Floyd: Ik heb een piemel.
+===
+title: Watje
+---
+Floyd: WAT WATJE??? IK HAAL JE UIT VRIEND!
+-> Ok sorry
+    Floyd: Beter.
+    Floyd: Maargoed even serieus.
+    <<jump Verklaring>>
+-> Kom dan
+    <<jump Vechten>>
+===
+title: Vechten
+---
+<<damage FirstPersonController>>
+Floyd: Lekker voor je. Maargoed even serieus weetje toch.
+<<jump Verklaring>>
+===
