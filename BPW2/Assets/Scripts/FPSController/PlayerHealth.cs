@@ -8,6 +8,8 @@ public class PlayerHealth : MonoBehaviour
     private Image HealthBarFill;
     [SerializeField] 
     private GameObject HealthBar;
+    [SerializeField] 
+    private AudioSource DamageSound;
 
     private float playerHealth;
     private float playerMaxHealth = 50f;
@@ -20,30 +22,15 @@ public class PlayerHealth : MonoBehaviour
         //GetComponent<DialogueRunner>().AddFunction("damage", () => {return DamagePlayer();} );
     }
 
-    public void Awake()
-    {
-        dialogueRunner.AddCommandHandler(
-            "damage",
-            (GameObject target) => {
-                DamagePlayer();
-            }             
-        );
-        dialogueRunner.AddCommandHandler(
-            "camera_look",
-            (GameObject target) => {
-                Camera.main.transform.LookAt(target.transform);
-            }             
-        );
-    }
-    
-
+    [YarnCommand("damage")]
     public void DamagePlayer()
-    {
-        HealthBar.SetActive(true);
-        playerHealth -= 10;
-        HealthBarFill.fillAmount = playerHealth / playerMaxHealth;
-        Invoke("SetUIOff", 3.0f);
-    }
+        {
+            HealthBar.SetActive(true);
+            playerHealth -= 10;
+            HealthBarFill.fillAmount = playerHealth / playerMaxHealth;
+            Invoke("SetUIOff", 3.0f);
+            DamageSound.Play();
+        }
 
     void SetUIOff()
     {
