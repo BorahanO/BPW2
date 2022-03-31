@@ -11,7 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 8142f83ada38bb24889c7b2161b67599
-  - enabled: 1
-    path: Assets/Scenes/ProtoScenes/Dialogue.unity
+  - enabled: 0
+    path: 
     guid: 4722ca2e15b187a4fadd535f5075bc28
+  - enabled: 1
+    path: Assets/Scenes/CrimeScene.unity
+    guid: f0729ef451e5585479e2666f9ec4d169
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 0a84d763e0f36f545b1208ebbfdbd225
+  - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: 6aa9c3910b02cab429ceddf8c6cfd0b4
   m_configObjects: {}

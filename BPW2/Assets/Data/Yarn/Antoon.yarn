@@ -1,0 +1,358 @@
+title: AntoonStart
+---
+Antoon: Damn, je zal maar zo eindigen. #line:0a20952 
+Antoon: Zo dood... en... i'unno. #line:081de81 
+Antoon: Maargoed, check grondig al het bewijs wat er light. Dan haal ik de getuige erbij. #line:06c5d5c 
+-> Is goed #line:09e4583 
+    <<jump AntoonGoed>>
+-> Moet dat? #line:0edbc3c 
+    <<jump AntoonMoetDat>>
+===
+title: AntoonGoed
+---
+Antoon: Bekijk alles van dichtbij. Ik ga nog even muziek luisteren. #line:0fb1d7e 
+<<disable Antoon>>
+===
+title: AntoonMoetDat
+---
+Antoon: Weet ik veel, ik ben geen agent. #line:0ece961 
+<<disable Antoon>>
+===
+
+title: FloydBegin
+---
+Floyd: IK WAS HET NIET IK ZWEER T JE!!!!
+Floyd: IK LIEP GEWOON TOCH WALLAH!
+Floyd: ... sorry, ik ben echt heel bang.
+-> Wat is er gebeurd?
+    <<jump Verklaring>>
+-> Haha watje
+    <<jump Watje>>
+===
+title: Verklaring
+---
+Floyd: Dinges, ik was toch gewoon aan het lopen weetje wel.
+Floyd: Ik liep zo toch, gewoon lopen enzo. Toen ik liep hierzo ik zie lijk.
+Floyd: Op moeder ik schrok me dood.
+Floyd: ... sorry zo bedoel ik het niet.
+Floyd: Diegene was net dood toch, dus ik belde gelijk politie zo.
+-> Je liegt
+    <<jump Liegen>>
+-> Klinkt logisch
+    <<jump Logisch>>
+===
+title: Watje
+---
+Floyd: WAT WATJE??? IK HAAL JE UIT VRIEND!
+-> Ok sorry
+    Floyd: Beter.
+    Floyd: Maargoed even serieus.
+    <<jump Verklaring>>
+-> Kom dan
+    <<jump Vechten>>
+===
+title: Vechten
+---
+<<damage FirstPersonController>>
+Floyd: Lekker voor je. Maargoed even serieus weetje toch.
+<<jump Verklaring>>
+===
+title: Liegen
+---
+Floyd: Hoe bedoel je?
+-> De slachtoffer is allang al dood
+    <<jump Waarheid>>
+-> Je was helemaal niet zomaar aan het lopen
+    <<jump NietLopen>>
+===
+title: NietLopen
+---
+<<damage FirstPersonController>>
+Floyd: Waar heb je het over?
+-> Sorry, ik had het mis. Kun je weer vertellen wat er gebeurde?
+<<jump Verklaring>>
+===
+title: Waarheid
+---
+Floyd: Oke ja klopt. Dinges, het ging eigenlijk anders snap je.
+Floyd: Ik liep hier gewoon zo toch, maar ik zag dat lijk toen toch je weet toch.
+Floyd: Ik zweer wou toch politie bellen weet je, maar toen kwam iemand van achter zo toch.
+Floyd: Pakte me vast toch, zei beter zeg je niks.
+Floyd: Ik zei ik zou niks zeggen toch, toen ging hij weg snap je toch.
+-> Waar ging hij heen?
+Floyd: Dinges, verder het pad door weet je. Toen naar rechts.
+<<disable FirstWitness>>
+===
+title: Logisch
+---
+<<damage FirstPersonController>>
+-> Wacht nee, dit klinkt helemaal niet logisch. Zeg weer eens opnieuw wat er gebeurde.
+<<jump Verklaring>>
+===
+
+title: CreepBegin
+---
+Onbekende: Dat is een kapmes tegen je nek aan a niffo.
+-> Wat is de betekenis hiervan?
+    <<jump Betekenis>>
+-> Doe dan, pussy
+    <<instakill FirstPersonController>>
+
+===
+title: Betekenis
+---
+Onbekende: Gaat je helemaal niks aan neef.
+Onbekende: Dit is wat er gaat gebeuren.
+Onbekende: Jij gaat netjes weg en vergeet wat er hier gebeurd is.
+-> Wie ben jij?
+Onbekende: Gaat je ook niks aan.
+-> Ben jij de moordenaar?
+Onbekende: ...
+Onbekende: Je laatste kans.
+-> Je ontkent het niet
+Onbekende: Hoezo denk je dat ik de moordenaar ben?
+Onbekende: Die mongool is al lang al dood.
+-> Je hebt het moordwapen in je handen
+    <<jump Moordwapen>>
+-> En hoe weet je dat?
+    <<jump NietOntkennen>>
+===
+title: Moordwapen
+---
+Onbekende: Oh? Ik heb hem dus met dit mes vermoord?
+<<damage FirstPersonController>>
+Onbekende: Je bent niet echt goed in je baan niffo.
+-> Vergeet dat. Wat doe je hier?
+<<jump Betekenis>>
+===
+title: NietOntkennen
+---
+Onbekende: Dat is toch duidelijk?
+Onbekende: Een kijkje en je ziet dat.
+-> Wanneer heb je hem gezien dan?
+Onbekende: Die man ligt daar al heel lang. Alles is verrot.
+Onbekende: Zn lijk is al bewijs genoeg.
+-> Er lag een ballondier bij de scene
+     <<jump Ballondier>>
+-> Er lag een rubiks kubus bij de scene
+    <<jump Rubiks>>
+===
+title: Rubiks
+---
+Onbekende: Leuk. Gefeliciteerd.
+Onbekende: Wat moet ik er mee?
+-> Ja dat weet je niet he?
+<<damage FirstPersonController>>
+Onbekende: Nee klopt.
+-> Hoezo weet je dan wel hoelang die gast dood is?
+    <<jump NietOntkennen>>
+===
+title: Ballondier
+---
+Onbekende: Leuk. Gefeliciteerd.
+Onbekende: Wat moet ik er mee?
+-> De ballondier is nogsteeds gevuld
+Onbekende: Ja dus?
+-> Zulke ballonen blijven niet lang gevuld.
+    <<jump BallonTijd>>
+-> Het is niet zomaar een ballon
+    <<jump NietBallon>>
+===
+title: NietBallon
+---
+Onbekende: Wat is het dan?
+-> ...geen idee eigenlijk
+Onbekende: Kan ik je niet alvast vermoorden?
+<<damage FirstPersonController>>
+-> Ballondier!!!!
+<<jump Ballondier>>
+===
+title: BallonTijd
+---
+Onbekende: ...
+Onbekende: Laatste waarschuwing. Ga terug naar huis.
+-> Alleen als jij weg gaat
+Onbekende: ... volg me niet. Loop gewoon rechtdoor.
+<<disable CreepyPerson>>
+===
+
+title: ShopBegin
+---
+Troy: Welkom, welkom!
+Troy: Waaaaaaaaaaaaaaaaaaaaaaar kan ik u mee van dienst zijn?
+-> Bent u de eigenaar?
+Troy: Reken maar van ja! Yes sir!
+Troy: Wij staan hier al sinds 2021!
+-> Het is 2022
+Troy: Al 365 dagen winstgevend!
+Troy: Jaaaa meneer iedereen wilt graag een van mijn magische kubussen proberen.
+-> Magisch?
+Troy: Jaaaa meneer dit zijn geen ordinaire rubiks kubussen! 
+Troy: Nee...nee...
+Troy: Deze kubussen zijn altijd op te lossen. 
+Troy: Wellicht is het geen magie.
+Troy: Misschien is iedereen opeens super slim geworden?
+-> Is ieder rubkis kubus niet al op te lossen?
+Troy: Ja, maaaaaaaaaaaaaaaaaaaaaarrrrrr...
+-> Maaaaaaaaaaaaaaaaaaaaaarrrrrr wat?
+Troy: Maaaaaaaaaaaaaaaaaaaaaarrrrrr ieder exemplaar wat ik verkocht heb is daadwerkelijk in feite opgelost.
+-> Aan wie verkoop je ze dan?
+Troy: Gewone mensen als jij en ik. Mocht je een vorige klant tegen komen kan je het aan hun vragen.
+Troy: Iedereen heeft ze opgelost.
+Troy: Maargoed, bent u hier om eentje te proberen?
+-> Ik ben hier eigenlijk om u wat te vragen
+Troy: Oh. Okay dan.
+<<jump ShopVragen>>
+===
+title: ShopVragen
+---
+Troy: Wat wilt u weten?
+-> Heeft u gehoord van het incident verder bovenop? 
+Troy: Oh ja, vreselijk. Die arme man.
+-> Waar was u vandaag tussen 14 uur 's middags en 21 uur vanavond? 
+Troy: Nou hier in mijn winkel natuurlijk.
+Troy: Mensen komen zowel in de middag als middernacht. Daar wil ik wel bij zijn.
+-> Hoe zijn de zaken?
+Troy: Moet ik eerlijk zeggen, niet zo goed de laatste tijd.
+Troy: Dit winkel stond bekend om de rumoeren dat niemand deze niet op kon lossen.
+Troy: Heel veel mensen kochten het dus voor hun nogal domme kenissen als een test als het ware.
+Troy: Maar nu zijn die geruchten niet echt meer zoveel waard. Ik denk dat het besmet is.
+-> Hoe bedoelt u besmet?
+Troy: Ik denk dat er onafgemaakte kubussen rond hangen.
+Troy: Dat is de enige verklaring wat ik kon verzinnen.
+-> Stoort het u?
+Troy: Ben je gek? Ontzettend!
+Troy: Ik kan binnekort mijn rekeningen niet meer betalen.
+-> Ik neem aan dat u goed bekend bent met de omgeving?
+Troy: Oh zeker. Na zoveel dagen ken ik dus bos door en door.
+<<jump Ondervragen>>
+===
+title: Ondervragen
+---
+-> Hoeveel klanten heeft u gehad de laatste aantal dagen?
+Troy: ...nul.
+ -> Dat betwijfel ik
+    <<jump ShopTwijfel>>
+ -> U liegt
+    <<jump ShopLiegen>>
+===
+title: ShopTwijfel
+---
+Troy: Hoezo?
+-> Nul klanten? Waarom bent u hier dan nog?
+Troy: Hopen dat het binnekort niet meer 0 zijn. Ik ga niet meteen opgeven na een paar slechte dagen.
+-> Ik zie daar niet echt wat mis mee.
+<<damagemore FirstPersonController>>
+<<jump Ondervragen>>
+===
+title: ShopLiegen
+---
+Troy: Hoe?
+-> De slachtoffer verderop is al enkele dagen dood.
+Troy: Oh dat is best erg.
+-> Hij is een klant geweest.
+Troy: Hoe kom je daar bij?
+-> Waarvoor zou hij anders in het bos zijn?
+    <<jump ShopWaarom>>
+-> Er lag een rubiks kubus naast het lijk
+    <<jump ShopKubus>>
+===
+title: ShopWaarom
+---
+<<damagemore FirstPersonController>>
+Troy: Gewoon om te bezichtigen? Net als bijna iedereen anders?
+-> Dat is niet wat ik bedoelde.
+<<jump ShopLiegen>>
+===
+title: ShopKubus
+---
+Troy: En dus? Dat kan letterlijk elke rubiks kubus ooit zijn.
+Troy: Had hij gewoon bij zich kunnen hebben toen hij dood ging a niffo.
+-> De slachtoffer was niet hier dood gegaan.
+Troy: Hoe bedoel je?
+-> Hij had geen kleding bij zich
+    <<jump ShopKleding>>
+-> Er waren geen bloedsporen
+    <<jump ShopBloed>>
+===
+title: ShopKleding
+---
+Troy: Was hij dus naakt?
+-> ...
+<<damagemore FirstPersonController>>
+Troy: Ik weet niet wat dat moet bewijzen.
+-> Feit blijft wel dat er nogsteeds een rubiks kubus lag naast het lijk
+<<jump ShopKubus>>
+===
+title: ShopBloed
+---
+Troy: ...
+-> De slachtoffer was niet hier vermoord
+Troy: ...
+-> Hij was eerder ergens anders vermoord en werd toen hier gebracht
+Troy: M...maar hoe weet je dan wanneer hij vermoord is?
+-> Volgens initiele onderzoek is het lichaam al enkele dagen zo geweest
+Troy: Oh.
+-> De slachtoffer is eerder hier geweest en is later vermoord
+Troy: Belachelijk. Maar dat verklaart nogsteeds de rubiks kubus niet.
+-> Oh dat antwoord hebben wij hier ook
+Troy: Hoe bedoel je?
+-> Er ontbreekt een rubiks kubus hier
+    <<jump ShopOntbreekt>>
+-> De rubiks kubus daar leek sprekend op die wat je hier verkoopt
+    <<jump SchopVerkoop>>
+===
+title: SchopVerkoop
+---
+Troy: Dit zijn visueel gezien ook geen speciale kubussen.
+Troy: Het magie zit in hoe ze werken. Dat had ik gezegt.
+<<damagemore FirstPersonController>>
+<<jump ShopBloed>>
+===
+title: ShopOntbreekt
+---
+-> De slachtoffer kwam een aantal dagen geleden binnen...
+Troy: ...en kocht toen een kubus.
+-> Waarom hield je dat verborgen?
+Troy: Een klant maakt weinig verschil. Dat gaat niet al mijn rekeningen betalen.
+Troy: Ik zou willen van wel, dan was ik nu met pensioen.
+-> De zaken gaan niet goed zoals je zei toch?
+Troy: Nee inderdaad.
+Troy: ...wacht. Doe je nu wat ik denk dat je doe?
+-> Hij had de rubiks kubus niet op kunnen lossen
+    <<jump ShopOplossen>>
+-> Hij sprak slecht over je winkel door de rumoeren
+    <<jump ShopSlechtPraten>>
+===
+title: ShopSlechtPraten
+---
+Troy: In tegendeel zelfs, door de rumoeren wou hij juist de kubussen proberen.
+Troy: Kocht meteen een exemplaar.
+<<damagemore FirstPersonController>>
+<<jump ShopOntbreekt>>
+===
+title: ShopOplossen
+---
+Troy: Dus?
+-> Toen was je blij dat hij dood was
+    <<jump ShopBlij>>
+-> Daarom heb je hem vermoord
+    <<jump ShopBekentenis>>
+===
+title: ShopBlij
+---
+<<damagemore FirstPersonController>>
+Troy: Waarom zou ik blij zijn dat iemand vermoord is?
+-> De slachtoffer kon niet de kubus oplossen
+<<jump ShopOplossen>>
+===
+title: ShopBekentenis
+---
+Troy: EN HIJ KREEG ZIJN VERDIENDE LOON!
+-> ...
+Troy: ...
+-> Waarom liet je een ballondier hangen?
+Troy: Die was niet van mij. Ik heb geen idee waar die vandaan komt.
+-> Zal wel. Meneer, u bent hierbij onder arrest
+<<Loadwin PauseCanvas>>
+===
