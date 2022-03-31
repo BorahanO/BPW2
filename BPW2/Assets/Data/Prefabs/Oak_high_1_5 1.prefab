@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5749116765786014856}
   - component: {fileID: 7506375181145468994}
   - component: {fileID: 1630481425156782547}
+  - component: {fileID: 6818572176329713757}
   m_Layer: 0
   m_Name: Oak_high_1_5 1
   m_TagString: Untagged
@@ -111,3 +112,16 @@ LODGroup:
     renderers:
     - renderer: {fileID: 7506375181145468994}
   m_Enabled: 1
+--- !u!65 &6818572176329713757
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8299285311076454807}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6658707, y: 21.163889, z: 1.8763657}
+  m_Center: {x: 0.02160263, y: 10.331944, z: -0.021907806}

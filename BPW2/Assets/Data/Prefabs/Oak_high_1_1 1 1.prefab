@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3151575081878404242}
   - component: {fileID: 889552869781751896}
   - component: {fileID: 1247588693089276865}
+  - component: {fileID: 2761046044121053153}
   m_Layer: 0
   m_Name: Oak_high_1_1 1 1
   m_TagString: Untagged
@@ -98,16 +99,29 @@ LODGroup:
   m_AnimateCrossFading: 1
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.03721582
+  - screenRelativeHeight: 0.06990914
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 889552869781751896}
-  - screenRelativeHeight: 0.016579857
+  - screenRelativeHeight: 0.059335113
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 889552869781751896}
-  - screenRelativeHeight: 0.0073419195
+  - screenRelativeHeight: 0.00734192
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 889552869781751896}
   m_Enabled: 1
+--- !u!65 &2761046044121053153
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682287902038092173}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4012029, y: 20.815016, z: 1.7815647}
+  m_Center: {x: 0.0661124, y: 10.157508, z: 0.02259922}
