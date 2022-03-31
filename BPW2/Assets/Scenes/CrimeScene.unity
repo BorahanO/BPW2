@@ -2775,7 +2775,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c74ce2158ae608549902afb4112fd042, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   intensity: 1
   shadowSpread: 0.01
   samples: 16
@@ -14109,7 +14113,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-41110
+  m_Name: pb_Mesh-10412
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15261,7 +15265,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-38936
+  m_Name: pb_Mesh-8238
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19581,7 +19585,7 @@ MonoBehaviour:
   implicitGroups: []
   implicitGroupedObjects: []
   bounds: []
-  hasEmissive: 
+  hasEmissive: []
   uvBuffOffsets: 
   uvBuffLengths: 
   uvSrcBuff: []
@@ -19593,10 +19597,10 @@ MonoBehaviour:
   lmGroupMinLOD: 
   lmGroupLODMatrix: 
   serverGetFileList: []
-  lightmapHasColor: 
-  lightmapHasMask: 
-  lightmapHasDir: 
-  lightmapHasRNM: 
+  lightmapHasColor: []
+  lightmapHasMask: []
+  lightmapHasDir: []
+  lightmapHasRNM: []
   modifiedAssetPathList: []
   modifiedAssets: []
   maps: []
@@ -22065,7 +22069,7 @@ PrefabInstance:
     - target: {fileID: 6747131049093651372, guid: 3e0e29e6d7e3554458c73eeb5c9dadd8,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1674
+      value: 1677
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6747131047240199446, guid: 3e0e29e6d7e3554458c73eeb5c9dadd8, type: 3}
@@ -25458,7 +25462,7 @@ PrefabInstance:
     - target: {fileID: 6747131049093651372, guid: 3e0e29e6d7e3554458c73eeb5c9dadd8,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1671
+      value: 1674
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6747131047240199446, guid: 3e0e29e6d7e3554458c73eeb5c9dadd8, type: 3}
@@ -28835,7 +28839,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   texName: sky.dds
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   intensity: 1
   samples: 32
   hemispherical: 0
@@ -29337,7 +29345,7 @@ PrefabInstance:
     - target: {fileID: 6747131049093651372, guid: 3e0e29e6d7e3554458c73eeb5c9dadd8,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1689
+      value: 1692
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6747131047240199446, guid: 3e0e29e6d7e3554458c73eeb5c9dadd8, type: 3}
@@ -31619,7 +31627,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-40340
+  m_Name: pb_Mesh-9642
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -35619,7 +35627,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-42756
+  m_Name: pb_Mesh-12058
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -39750,7 +39758,7 @@ PrefabInstance:
     - target: {fileID: 6747131049093651372, guid: 3e0e29e6d7e3554458c73eeb5c9dadd8,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 1683
+      value: 1686
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6747131047240199446, guid: 3e0e29e6d7e3554458c73eeb5c9dadd8, type: 3}
